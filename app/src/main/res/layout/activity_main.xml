@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -35,7 +36,7 @@
             android:shadowColor="#1761B8"
             android:shadowDy="10"
             android:shadowRadius="20"
-            android:text="Novel Passion"
+            android:text="Novel Passionnn"
             android:textAlignment="center"
             android:textColor="#ffffff"
             android:textFontWeight="60"
@@ -53,7 +54,14 @@
         android:layout_height="607dp"
         android:layout_marginTop="-40dp"
         app:srcCompat="@drawable/img" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btn"
+        android:background="@android:color/transparent"
+        >
 
+    </Button>
 
 
 

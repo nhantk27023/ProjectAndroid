@@ -7,22 +7,350 @@
     tools:context=".HomePage"
     android:orientation="vertical">
 
-    <TableLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navi"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:contextClickable="true"
+        android:outlineAmbientShadowColor="#1E92EA"
+        app:itemRippleColor="#1E92EA"
+        app:menu="@menu/bottom_navimenu"
+
+        />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg2"
+        android:orientation="vertical"
         >
 
-        <TableRow
+        <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            >
-            <Button
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Novel Passion"
+                android:textSize="30dp"
+                android:fontFamily="@font/phuduextra"
+                android:textFontWeight="900"
+                android:lineHeight="36.75dp"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="13dp"
+                android:textColor="#ffffff"
                 >
 
-            </Button>
-        </TableRow>
-    </TableLayout>
+            </TextView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xin chào, Guest"
+                android:fontFamily="@font/arial"
+                android:textColor="#fff"
+                android:textFontWeight="400"
+                android:textSize="12dp"
+                android:lineHeight="13.8dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="64dp"
+                ></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ring"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="52dp"
+                ></ImageView>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="29dp"
+
+
+                ></ImageView>
+
+            <TextView
+                android:layout_width="322dp"
+                android:layout_height="33.44dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textbox_custom"
+               >
+
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="86.33dp"></ImageView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nhập từ khóa tìm kiếm truyện"
+                app:backgroundTint="@null"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="118dp"
+                android:textSize="14dp"
+                android:lineHeight="16.1dp"
+                android:backgroundTint="@color/white"
+
+
+                >
+
+            </EditText>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:background="@drawable/banner1"
+        android:layout_marginTop="150dp">
+    </ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:layout_marginTop="395.39dp"
+        android:layout_marginLeft="182dp">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c1"
+        android:layout_marginTop="418dp"
+        android:layout_marginLeft="62dp">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c2"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="149dp">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c3"
+        android:layout_marginTop="421dp"
+        android:layout_marginLeft="238dp">
+
+    </ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c4"
+        android:layout_marginTop="418dp"
+        android:layout_marginLeft="333dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bảng xếp hạng"
+        android:fontFamily="@font/arial"
+        android:textFontWeight="400"
+        android:textSize="12dp"
+        android:lineHeight="13.8dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="32dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gửi bản thảo"
+        android:fontFamily="@font/arial"
+        android:textFontWeight="400"
+        android:textSize="12dp"
+        android:lineHeight="13.8dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="127dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trò chuyện"
+        android:fontFamily="@font/arial"
+        android:textFontWeight="400"
+        android:textSize="12dp"
+        android:lineHeight="13.8dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="226dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm của tôi"
+        android:fontFamily="@font/arial"
+        android:textFontWeight="400"
+        android:textSize="12dp"
+        android:lineHeight="13.8dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="318dp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BTV Đề Cử"
+        android:fontFamily="@font/utm"
+        android:textColor="#1E92EA"
+        android:textFontWeight="400"
+        android:lineHeight="22.84dp"
+        android:letterSpacing="0.1"
+        android:textSize="16dp"
+        android:layout_marginTop="499dp"
+        android:layout_marginLeft="13dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem tất cả"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="506dp"
+        android:layout_marginLeft="331dp"
+        android:textFontWeight="700"
+        android:textColor="#000"
+        android:textSize="12dp"
+        android:lineHeight="13.8dp"
+        ></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anh1"
+        android:layout_marginTop="533dp"
+        ></ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anh2"
+        android:layout_marginTop="533dp"
+        android:layout_marginLeft="116dp"
+        ></ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anh3"
+        android:layout_marginTop="533dp"
+        android:layout_marginLeft="232dp"
+        ></ImageView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anh4"
+        android:layout_marginTop="533dp"
+        android:layout_marginLeft="348dp"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Hero Academia"
+        android:fontFamily="@font/arial"
+        android:textSize="10dp"
+        android:lineHeight="11.5dp"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="6dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:text="My Hero Academia: Two Heroes · Cổng thông tin Anime và manga..."
+        android:textSize="6dp"
+        android:lineHeight="5.75dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="724dp"
+        android:layout_marginLeft="6dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:fontFamily="@font/arial"
+        android:textSize="10dp"
+        android:lineHeight="11.5dp"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="121dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:text="Sau khi phát hành, Your Name – Tên cậu là gì? Hãy cùng đón xem..."
+        android:textSize="6dp"
+        android:lineHeight="5.75dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="724dp"
+        android:layout_marginLeft="122dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fire Works"
+        android:fontFamily="@font/arial"
+        android:textSize="10dp"
+        android:lineHeight="11.5dp"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="238dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:text="him điện ảnh anime “Pháo Hoa, Nên Ngắm Từ Dưới Hay Bên Cạnh”..."
+        android:textSize="6dp"
+        android:lineHeight="5.75dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="724dp"
+        android:layout_marginLeft="238dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Piece"
+        android:fontFamily="@font/arial"
+        android:textSize="10dp"
+        android:lineHeight="11.5dp"
+        android:layout_marginTop="710dp"
+        android:layout_marginLeft="352dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:text="Mỗi câu chuyện giới thiệu Mũ Rơm trong những tình huống ngộ nghĩnh. ..."
+        android:textSize="6dp"
+        android:lineHeight="5.75dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="724dp"
+        android:layout_marginLeft="352dp"></TextView>
 
 </FrameLayout>
