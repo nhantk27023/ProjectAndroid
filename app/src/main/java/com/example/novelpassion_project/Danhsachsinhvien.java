@@ -1,21 +1,14 @@
 package com.example.novelpassion_project;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.os.Bundle;
-import android.widget.Button;
 
-public class HomePage extends AppCompatActivity {
+public class Danhsachsinhvien extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
-
-
-
-
+        setContentView(R.layout.activity_danhsachsinhvien);
     }
 }

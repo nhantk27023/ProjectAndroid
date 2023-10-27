@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Danhsachsinhvien">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Võ Thành Nhân-21115053120230"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngô Hữu Phát-21115053120232"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        >
+    </TextView>
+
+
+</FrameLayout>
