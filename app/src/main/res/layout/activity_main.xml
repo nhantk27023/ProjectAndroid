@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="482dp"
+        android:background="@drawable/bg1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/svninternation"
+            android:lineHeight="45dp"
+            android:shadowColor="#1761B8"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:text="MỞ RA MỘT THẾ GIỚI MỚI"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/phuduextra"
+            android:shadowColor="#1761B8"
+            android:shadowDy="10"
+            android:shadowRadius="20"
+            android:text="Novel Passion"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textFontWeight="60"
+            android:textSize="40sp"
+
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="607dp"
+        android:layout_marginTop="-40dp"
+        app:srcCompat="@drawable/img" />
+
+
+
+
+
+</FrameLayout>
