@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/anh1"
+
+        ></ImageView>
+    <TextView
+        android:id="@+id/img_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Hero Academia"
+        android:fontFamily="@font/arial"
+        android:textSize="10dp"
+        android:lineHeight="11.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="6dp"
+        android:textFontWeight="700"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:id="@+id/img_desc"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:text="My Hero Academia: Two Heroes · Cổng thông tin Anime và manga..."
+        android:textSize="6dp"
+        android:lineHeight="5.75dp"
+        android:textFontWeight="400"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="6dp"></TextView>
+
+
+
+</LinearLayout>
