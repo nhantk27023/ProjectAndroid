@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myintent=new Intent(MainActivity.this,HomePage.class);
                 startActivity(myintent);
+
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {

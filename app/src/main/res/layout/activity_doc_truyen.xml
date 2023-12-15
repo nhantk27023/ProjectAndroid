@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DocTruyenActivity">
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:onClick="left"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/leftarow2"
+        android:layout_centerVertical="true"
+        android:padding="7dp"
+        android:background="@drawable/bg_left" />
+    <ImageView
+        android:onClick="right"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/leftarow2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:rotation="180"
+        android:padding="7dp"
+        android:background="@drawable/bg_left"
+        ></ImageView>
+    <TextView
+        android:id="@+id/txvSoTrang"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/bg_sotrang"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="10/20"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"></TextView>
+    <ImageView
+        android:id="@+id/back1"
+        android:onClick="backChap"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/leftarrow1"
+        android:layout_margin="10dp"></ImageView>
+
+
+
+
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -10,7 +11,7 @@ android {
         applicationId = "com.example.novelpassion_project"
         minSdk = 28
         //noinspection EditedTargetSdkVersion
-        targetSdk = 34
+        targetSdk=34
         versionCode = 1
         versionName = "1.0"
 
@@ -46,4 +47,10 @@ dependencies {
     implementation ("me.relex:circleindicator:2.1.6")
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation ("androidx.cardview:cardview:1.0.0")
+    implementation("com.squareup.okhttp:okhttp:2.5.0")
+    implementation ("com.google.code.gson:gson:2.10.1")
+    implementation ("com.squareup.retrofit2:retrofit:2.1.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.1.0")
+    implementation("com.google.firebase:firebase-database:20.3.0")
+
 }

@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChapActivity">
+    tools:context=".ChapActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imgAnhTruyens1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/anh1"
+            android:scaleType="centerCrop"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/txvTenTruyens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D2373636"
+            android:text="ten truyen"
+            android:textColor="@color/white"
+            android:gravity="left"
+            android:paddingLeft="115dp"
+            android:paddingTop="65dp"
+            android:fontFamily="@font/phuduextra"
+            android:textSize="20sp"
+
+
+            >
+        </TextView>
+        <ImageView
+            android:id="@+id/imgAnhTruyens"
+            android:layout_width="82dp"
+            android:layout_height="123dp"
+            android:src="@drawable/anh1"
+            android:background="@drawable/bganh"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="20dp"
+
+
+
+        ></ImageView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="200dp"></ImageView>
+        <ImageView
+            android:id="@+id/back"
+            android:onClick="back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            ></ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"></ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"></ImageView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/love"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"></ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="17dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/gr"></ImageView>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bg2"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách chapter"
+        android:textSize="15sp"
+        android:fontFamily="@font/phuduextra"
+        android:padding="15dp"
+        ></TextView>
+
+    <ListView
+        android:id="@+id/lsvDanhSach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

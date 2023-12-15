@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.novelpassion_project;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -54,7 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
                 reference.child(user).setValue(helperClass);
 
                 Toast.makeText(RegisterActivity.this, "Acccount successful!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RegisterActivity.this, HomePage.class);
                 startActivity(intent);
 //              finish();
             }

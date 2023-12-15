@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.novelpassion_project;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -116,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
                     if(Objects.equals(passwordFromDB, password))
                     {
                         Ed_user.setError(null);
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, HomePage.class);
                         intent.putExtra("USERNAME", username); // Thêm tên người dùng vào Intent
                         startActivity(intent);
                     }

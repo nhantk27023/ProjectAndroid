@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.novelpassion_project;
 
 public class HelperClass {
     String user, email, password;

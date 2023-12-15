@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "81264828192",
+    "project_id": "novelpassion-project",
+    "storage_bucket": "novelpassion-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81264828192:android:fb5597c95e895a2bbec145",
+        "android_client_info": {
+          "package_name": "com.example.novelpassion_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDECseDHvO9-RT4-DzEa1Imjz4lz4a21Mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -61,7 +61,7 @@
             android:layout_height="47dp"
             android:layout_gravity="center"
             android:background="@drawable/input_text"
-            android:drawableLeft="@drawable/user"
+            android:drawableLeft="@drawable/userr"
             android:drawablePadding="18dp"
             android:ems="10"
             android:hint="Tên người dùng"

@@ -1,15 +1,21 @@
 <resources>
+    <string name="login_text">Đăng nhập <font color="#1E92EA">Novel Passion</font> để tận hưởng trọn vẹn các tính năng các bạn nhé !</string>
     <string name="app_name">NovelPassion_project</string>
+    <string name="register_underline"><font color="#1E92EA"><u>Đăng ký ngay</u></font></string>
     <string name="title_activity_home_page">HomePage</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
+    <string name="login_underline"><font color="#1E92EA"><u>Đăng nhập</u></font></string>
+    <string name="register_text">Đăng ký ngay để khám phá thế giới độc đáo <font color="#1E92EA">Novel Passion</font> của chúng mình nhé !</string>
     <string name="previous">Previous</string>
     <string name="action_home">Trang chủ</string>
     <string name="action_type">Phân loại</string>
     <string name="action_book">Tủ sách</string>
     <string name="action_user">Tài khoản</string>
+    <string name="checkbox_text">Bằng cách nhấn vào Đăng ký, bạn đồng ý với <font color="#1E92EA"><u>Điều khoản</u></font> và <font color="#1E92EA"><u>Chính sách bảo mật</u></font> của chúng tôi</string>
+
 
 
     <string name="lorem_ipsum">

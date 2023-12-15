@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
     tools:context=".HomePage"
     android:orientation="vertical">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navi"
         android:layout_width="match_parent"
@@ -17,7 +20,7 @@
         android:outlineAmbientShadowColor="#1E92EA"
         app:itemRippleColor="#1E92EA"
         app:menu="@menu/bottom_navimenu"
-
+        android:layout_alignParentBottom="true"
         />
 
     <LinearLayout
@@ -37,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Novel Passion"
+                android:text="Novel Passionn"
                 android:textSize="30dp"
                 android:fontFamily="@font/phuduextra"
                 android:textFontWeight="900"
@@ -53,22 +56,34 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Xin chào, Guest"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="39dp"
                 android:fontFamily="@font/arial"
+                android:lineHeight="13.8dp"
+                android:text="Xin chào,"
+                android:textColor="#fff"
+                android:textFontWeight="400"
+                android:textSize="12dp"></TextView>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="70dp"
+                android:layout_height="15dp"
+                android:text="Guest"
+                android:layout_marginTop="39dp"
+                android:fontFamily="@font/utm_swiss"
                 android:textColor="#fff"
                 android:textFontWeight="400"
                 android:textSize="12dp"
                 android:lineHeight="13.8dp"
-                android:layout_marginTop="39dp"
-                android:layout_marginLeft="64dp"
                 ></TextView>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ring"
-                android:layout_marginLeft="15dp"
+
                 android:layout_marginTop="52dp"
+
                 ></ImageView>
         </LinearLayout>
         <FrameLayout
@@ -80,6 +95,7 @@
                 android:background="@drawable/menu"
                 android:layout_marginLeft="13dp"
                 android:layout_marginTop="29dp"
+                android:id="@+id/menu"
 
 
                 ></ImageView>
@@ -94,12 +110,14 @@
 
             </TextView>
             <ImageView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search"
                 android:layout_marginTop="30dp"
                 android:layout_marginLeft="86.33dp"></ImageView>
             <EditText
+                android:id="@+id/edtTimkiem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Nhập từ khóa tìm kiếm truyện"
@@ -131,6 +149,7 @@
         android:layout_height="30dp"
         app:ci_drawable="@drawable/black_radius"
         android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="394dp"></me.relex.circleindicator.CircleIndicator>
 
     <ImageView
@@ -232,129 +251,34 @@
         android:layout_marginLeft="13dp">
 
     </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Xem tất cả"
-        android:fontFamily="@font/arial"
-        android:layout_marginTop="506dp"
-        android:layout_marginLeft="331dp"
-        android:textFontWeight="700"
-        android:textColor="#000"
-        android:textSize="12dp"
-        android:lineHeight="13.8dp"
-        ></TextView>
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="25dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/anh1"
-        android:layout_marginTop="533dp"
-        ></ImageView>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/anh2"
-        android:layout_marginTop="533dp"
-        android:layout_marginLeft="116dp"
-        ></ImageView>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/anh3"
-        android:layout_marginTop="533dp"
-        android:layout_marginLeft="232dp"
-        ></ImageView>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/anh4"
-        android:layout_marginTop="533dp"
-        android:layout_marginLeft="348dp"
-        ></ImageView>
+        android:layout_marginTop="499dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/resett"
+        android:layout_alignParentRight="true"
+        android:onClick="update">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Hero Academia"
-        android:fontFamily="@font/arial"
-        android:textSize="10dp"
-        android:lineHeight="11.5dp"
-        android:layout_marginTop="710dp"
-        android:layout_marginLeft="6dp"
-        android:textFontWeight="700"
-        android:textColor="@color/black"></TextView>
-    <TextView
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:text="My Hero Academia: Two Heroes · Cổng thông tin Anime và manga..."
-        android:textSize="6dp"
-        android:lineHeight="5.75dp"
-        android:textFontWeight="400"
-        android:fontFamily="@font/arial"
-        android:layout_marginTop="724dp"
-        android:layout_marginLeft="6dp"></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Your Name"
-        android:fontFamily="@font/arial"
-        android:textSize="10dp"
-        android:lineHeight="11.5dp"
-        android:layout_marginTop="710dp"
-        android:layout_marginLeft="121dp"
-        android:textFontWeight="700"
-        android:textColor="@color/black"></TextView>
-    <TextView
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:text="Sau khi phát hành, Your Name – Tên cậu là gì? Hãy cùng đón xem..."
-        android:textSize="6dp"
-        android:lineHeight="5.75dp"
-        android:textFontWeight="400"
-        android:fontFamily="@font/arial"
-        android:layout_marginTop="724dp"
-        android:layout_marginLeft="122dp"></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fire Works"
-        android:fontFamily="@font/arial"
-        android:textSize="10dp"
-        android:lineHeight="11.5dp"
-        android:layout_marginTop="710dp"
-        android:layout_marginLeft="238dp"
-        android:textFontWeight="700"
-        android:textColor="@color/black"></TextView>
-    <TextView
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:text="him điện ảnh anime “Pháo Hoa, Nên Ngắm Từ Dưới Hay Bên Cạnh”..."
-        android:textSize="6dp"
-        android:lineHeight="5.75dp"
-        android:textFontWeight="400"
-        android:fontFamily="@font/arial"
-        android:layout_marginTop="724dp"
-        android:layout_marginLeft="238dp"></TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="One Piece"
-        android:fontFamily="@font/arial"
-        android:textSize="10dp"
-        android:lineHeight="11.5dp"
-        android:layout_marginTop="710dp"
-        android:layout_marginLeft="352dp"
-        android:textFontWeight="700"
-        android:textColor="@color/black"></TextView>
-    <TextView
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:text="Mỗi câu chuyện giới thiệu Mũ Rơm trong những tình huống ngộ nghĩnh. ..."
-        android:textSize="6dp"
-        android:lineHeight="5.75dp"
-        android:textFontWeight="400"
-        android:fontFamily="@font/arial"
-        android:layout_marginTop="724dp"
-        android:layout_marginLeft="352dp"></TextView>
+    </ImageView>
+    <GridView
+        android:id="@+id/gdvDSTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="530dp"
+        android:numColumns="3"
+></GridView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity = "start">
 
-</FrameLayout>
+        <include
+            layout="@layout/activity_nav_drawer">
+        </include>
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

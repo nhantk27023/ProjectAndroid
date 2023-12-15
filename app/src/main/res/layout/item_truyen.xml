@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+        <ImageView
+            android:id="@+id/imgAnhTruyen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/a1"
+            android:scaleType="centerCrop"
+            ></ImageView>
+        <TextView
+            android:id="@+id/txvTenChap"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#CB1E1E1E"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="truyen tranh"
+            android:textSize="10dp"
+            ></TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txvTenTruyen"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+
+        android:text="ten truyen tranh"
+        android:fontFamily="@font/phudu"
+        android:textSize="14dp"
+        android:textColor="#000"></TextView>
+</LinearLayout>

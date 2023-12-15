@@ -30,7 +30,7 @@
             android:text="ĐĂNG NHẬP"
             android:textSize="16dp"
             android:paddingTop="2dp"
-            android:textColor="@color/blue"
+            android:textColor="#2196F3"
             android:fontFamily="@font/utm_swiss">
 
         </Button>
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/home"
+            android:drawableLeft="@drawable/home1"
             android:drawableRight="@drawable/next"
             android:text="Trang chủ"
             android:gravity="center_vertical"
