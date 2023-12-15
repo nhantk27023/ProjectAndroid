@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:orientation="vertical"
+        android:paddingTop="37dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/header_nav">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/avt"
+            android:layout_marginBottom="20dp">
+        </ImageView>
+
+        <Button
+            android:layout_width="160.46dp"
+            android:layout_height="37dp"
+            android:id="@+id/login"
+            android:background="@drawable/custom_button_white"
+            app:backgroundTint="@null"
+            android:text="ĐĂNG NHẬP"
+            android:textSize="16dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/utm_swiss">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/home"
+            android:drawableRight="@drawable/next"
+            android:text="Trang chủ"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/art"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Phòng tranh"
+            android:drawableRight="@drawable/next"
+            android:drawableLeft="@drawable/art"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:textSize="18dp">>
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/call"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ: 054"
+            android:drawableRight="@drawable/next"
+            android:drawableLeft="@drawable/call"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:textSize="18dp">>
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mes"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Gửi yêu cầu hỗ trợ"
+            android:drawableRight="@drawable/next"
+            android:drawableLeft="@drawable/mes"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:textSize="18dp">>
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Thỏa thuận sử dụng dịch vụ"
+            android:drawableRight="@drawable/next"
+            android:drawableLeft="@drawable/list"
+            android:gravity="center_vertical"
+            android:drawablePadding="15dp"
+            android:textSize="18dp">>
+        </TextView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
