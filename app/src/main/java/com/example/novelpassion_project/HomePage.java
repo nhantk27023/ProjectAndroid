@@ -1,6 +1,7 @@
 package com.example.novelpassion_project;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -12,6 +13,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -27,6 +29,8 @@ import com.example.novelpassion_project.api.ApiClient;
 import com.example.novelpassion_project.api.ApiService;
 import com.example.novelpassion_project.interfaces.LayTruyenVe;
 import com.example.novelpassion_project.object.TruyenTranh;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.gson.JsonIOException;
 
 import org.json.JSONArray;
@@ -46,7 +50,8 @@ public class HomePage extends AppCompatActivity implements LayTruyenVe {
     ImageView menu;
     Button button;
     TextView name;
-    private ViewPager viewPager;
+    BottomNavigationView btnNav;
+    private ViewPager viewPager,viewPager2;
     private CircleIndicator circleIndicator;
     private photoAdapter photoAdapter;
     private GridView gdvDSTruyen;
@@ -63,12 +68,7 @@ public class HomePage extends AppCompatActivity implements LayTruyenVe {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        viewPager=findViewById(R.id.viewpager);
-        circleIndicator=findViewById(R.id.circle_indicator);
-        photoAdapter= new photoAdapter(this,getListPhoto());
-        viewPager.setAdapter(photoAdapter);
-        circleIndicator.setViewPager(viewPager);
-        photoAdapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
+
         init();
         anhXa();
         setUp();
@@ -102,6 +102,15 @@ public class HomePage extends AppCompatActivity implements LayTruyenVe {
        menu = findViewById(R.id.menu);
         button = findViewById(R.id.login);
         name = findViewById(R.id.name);
+        viewPager=findViewById(R.id.viewpager);
+        circleIndicator=findViewById(R.id.circle_indicator);
+        photoAdapter= new photoAdapter(this,getListPhoto());
+        viewPager.setAdapter(photoAdapter);
+        circleIndicator.setViewPager(viewPager);
+        photoAdapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
+        btnNav=findViewById(R.id.bottom_navi);
+
+
  //       home = findViewById(R.id.home);
 //        art = findViewById(R.id.art);
 //       call = findViewById(R.id.call);
@@ -122,6 +131,27 @@ public class HomePage extends AppCompatActivity implements LayTruyenVe {
         gdvDSTruyen.setAdapter(adapter);
     }
     private void setClick(){
+        btnNav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.home:
+                        Toast.makeText(HomePage.this,"Home",Toast.LENGTH_SHORT).show();
+                      break;
+                    case R.id.type:
+                        Toast.makeText(HomePage.this,"type",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.book:
+                        Toast.makeText(HomePage.this,"book",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.user:
+                        Toast.makeText(HomePage.this,"user",Toast.LENGTH_SHORT).show();
+                        break;
+
+                }
+                return true;
+            }
+        });
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -289,11 +319,12 @@ public class HomePage extends AppCompatActivity implements LayTruyenVe {
         super.onPause();
         closeDrawer(drawerLayout);
     }
+    private void setUpViewPager(){
 
+    }
     public void update(View view) {
         try {
             batDau();
-
            readItems();
 
 
